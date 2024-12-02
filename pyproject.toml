@@ -1,0 +1,26 @@
+[project]
+name = "pylox"
+version = "0.1.0"
+description = "Python implementation of the LOX language"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+docstring-code-format = true
+
+[tool.ruff.lint]
+extend-select = [
+    "E501",
+    "UP",  # pyupgrade
+#    "D",  # pydocstyle
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
